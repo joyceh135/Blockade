@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<header>
+		<ul>
+			<li><a href="index.html"><i class="fa fa-home"></i></a></li>
+      <li><a href="flappy.html">Flappy</a></li>
+      <li><a href="breakout.html">Breakout</a></li>
+      <li><a href="spikes.html">Spikes</a></li>
+    </ul>
+  </header>
+  
+  <div class="welcome">
+    <h1><strong>Welcome</strong> to our Flappy!</h1>
+    <p> 
+      A layer of bricks lines the top third of the screen and the goal is to destroy them all by repeatedly bouncing a ball off a paddle into them. Use the left and right buttons to move the paddle.
+    </p>
+    <button onclick="myFunction()">View Tutorial</button>
+    <p id="tutorial"></p>
+
+    <script>
+      function myFunction() {
+        document.getElementById("tutorial").innerHTML = "Coming Soon...";
+      }
+    </script>
+  </div>
+
+  <script type="text/javascript" src="phaser.js"></script>
+  
+  <canvas>
+    <script type="text/javascript" src="breakout.js"></script>
+  </canvas>
+  
+  </body>
+</html>
